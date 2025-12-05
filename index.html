@@ -1,42 +1,38 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NVRQ Profile</title>
+    <title>nvrq</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Hintergrundvideo -->
-<video autoplay muted loop id="bg-video">
-    <source src="assets/background.mp4" type="video/mp4">
+<video autoplay loop muted playsinline class="bg-video">
+    <source src="assets/bg.mp4" type="video/mp4">
 </video>
 
-<!-- Profil-Card -->
-<div class="card fade-in">
+<div class="card">
+    <img class="pfp" src="assets/pfp.png" alt="Profile Picture">
 
-    <!-- Discord Mini Profil -->
-    <div id="discord-profile" class="discord-box">
-        <p>Lade Discord Profil...</p>
-    </div>
-
-    <!-- Name & Bio -->
-    <h1 class="name">nvrq</h1>
+    <h1 class="username">nvrq</h1>
     <p class="bio">quiet mind, loud dreams</p>
 
-    <!-- Social Icons -->
     <div class="socials">
-        <a href="https://discord.com" target="_blank" class="social-icon">Discord</a>
-        <a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a>
-        <a href="https://youtube.com" target="_blank" class="social-icon">YouTube</a>
+        <a href="https://instagram.com/" target="_blank">
+            <img src="assets/instagram.svg" class="icon">
+        </a>
+        <a href="https://youtube.com/" target="_blank">
+            <img src="assets/youtube.svg" class="icon">
+        </a>
+        <a href="https://github.com/" target="_blank">
+            <img src="assets/github.svg" class="icon">
+        </a>
     </div>
 
-    <!-- Music -->
-    <audio controls>
-        <source src="assets/music.mp3" type="audio/mpeg">
+    <audio controls class="player">
+        <source src="assets/song.mp3" type="audio/mp3">
     </audio>
-
 </div>
 
 <script src="script.js"></script>
