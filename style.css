@@ -1,95 +1,69 @@
-/* Allgemein */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: white;
-    text-align: center;
-    overflow-x: hidden;
-    background: #111;
+    height: 100vh;
+    overflow: hidden;
 }
 
-/* Hintergrundvideo */
-#bg-video {
+.bg-video {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100vw;
     height: 100vh;
     object-fit: cover;
     z-index: -1;
-    filter: brightness(0.5);
 }
 
-/* Card */
 .card {
-    margin-top: 12vh;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 40px;
-    border-radius: 25px;
-    width: 360px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0; /* fade-in start */
-}
-
-/* Fade-In Animation */
-.fade-in {
-    animation: fadein 0.8s ease forwards;
-}
-@keyframes fadein {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
-}
-
-/* Name & Bio */
-.name {
-    font-size: 28px;
-    margin-top: 10px;
-}
-.bio {
-    color: #ccc;
-    margin-top: -5px;
-    margin-bottom: 15px;
-}
-
-/* Discord Mini Profil */
-.discord-box {
-    background: rgba(255,255,255,0.08);
-    padding: 15px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    width: 350px;
+    margin: auto;
+    margin-top: 7%;
+    padding: 25px;
+    text-align: center;
+    background: rgba(0,0,0,0.55);
+    border-radius: 22px;
     backdrop-filter: blur(8px);
+    color: white;
+    opacity: 0;
 }
 
-.d-avatar {
-    width: 60px;
-    height: 60px;
+.pfp {
+    width: 115px;
+    height: 115px;
     border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid rgba(255,255,255,0.4);
 }
 
-/* Social Icons */
+.username {
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+.bio {
+    opacity: 0.8;
+}
+
 .socials {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 15px;
+    gap: 18px;
+    margin: 20px 0;
 }
 
-.social-icon {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.1);
-    transition: 0.2s;
+.icon {
+    width: 32px;
+    height: 32px;
+    transition: 0.3s;
+    opacity: 0.85;
 }
-.social-icon:hover {
-    background: rgba(255,255,255,0.25);
+
+.icon:hover {
+    opacity: 1;
+    transform: scale(1.12);
+}
+
+.player {
+    width: 80%;
+    margin-top: 10px;
 }
